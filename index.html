@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <!--
-    Name Document: index.html
-    Author: M Nelis
-    Date of creation:28-10-2019
-    Date& name last change Mnelis @ 28-10-2019
+name document:		Project Portfolio
+author:				P.H.D. Reumkens
+date of creation:	28-10-2019
+document function:	download pagina voor Portfolio
+date last change:	29-10-2019
 -->
-<htm>
+
+<html>
+    <style>
+
+        body {margin:0;}
+
+        .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        }
+
+        .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .navbar a:hover {
+        background: #00ffff;
+        color: black;
+        }
+
+        .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px; /* Used in this example to enable scrolling */
+        }
+    </style>
+
     <head>
-        <title>HTML demo</title>
-        
-        <link rel="stylesheet"  type="text/css" href="stylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>
+            Portfolio
+        </title>
     </head>
+    
     <body>
-      
-</body>
-</htm>
+        <!--menu balk-->
+            <div class="navbar">
+                <div class="col-md-3"><a href="#Home">Home</a></div>
+                <div class="col-md-3"><a href="#About">About</a></div>
+                <div class="col-md-3"><a href="#Lab">Lab</a></div>
+                <div class="col-md-3"><a href="#Contact">Contact</a></div>
+            </div>
+        </div>
 
-<script>
+        <div class="main">
+            <!--titel-->
+            <h1 id="Home">Portfolio</h1>
 
-</script>
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+            </div>
+            
+            <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5" align="center">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+            </div>
+            
+            <!--derde rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5" align="center">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+            </div>
+            <hr>
+            <h3 id="About">
+                About
+            </h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            <h3 id="Lab">
+                Lab
+            </h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            <h3 id="Contact">
+                Contact
+            </h3>
+        </div>
+    </body>
+</html>
