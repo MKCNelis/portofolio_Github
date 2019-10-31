@@ -9,8 +9,37 @@ date last change:	29-10-2019
 
 <html>
     <style>
-        a:hover {
-        background-color: rgb(0, 255, 255);
+
+        body {margin:0;}
+
+        .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        }
+
+        .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .navbar a:hover {
+        background: #00ffff;
+        color: black;
+        }
+
+        .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px; /* Used in this example to enable scrolling */
         }
     </style>
 
@@ -28,56 +57,68 @@ date last change:	29-10-2019
     
     <body>
         <!--menu balk-->
-        <div class="row justify-content-center" align="center">
-            <div class="col-md-3"><a href=./index.html>Home</a></div>
-            <div class="col-md-3"><a href=./aboutPage.html>About</a></div>
-            <div class="col-md-3"><a href=./labPage.html>Lab</a></div>
-            <div class="col-md-3"><a href=./contactPage.html>Contact</a></div>
+            <div class="navbar">
+                <div class="col-md-3"><a href="#Home">Home</a></div>
+                <div class="col-md-3"><a href="#About">About</a></div>
+                <div class="col-md-3"><a href="#Lab">Lab</a></div>
+                <div class="col-md-3"><a href="#Contact">Contact</a></div>
+            </div>
         </div>
-        
-        <!--titel-->
-        <h1>Portfolio</h1>
 
-        <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
-        <div class="row jusstify-content-center">
-            <div class="col-md-5">
-                <p>
-                    info info info info info  info info meer info <br> test test test
-                </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-            </div>
-        </div>
-        
-        <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
-        <div class="row jusstify-content-center">
-            <div class="col-md-5" align="center">
-                <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <p>
-                    info info info info info  info info meer info <br> test test test
-                </p>
-            </div>
-        </div>
-        
-        <!--derde rij met 2 colommen (afbeelding rechts, text links)-->
-        <div class="row jusstify-content-center">
-            <div class="col-md-5">
-                <p>
-                    info info info info info  info info meer info <br> test test test
-                </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-5" align="center">
-                <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-            </div>
-        </div>
-        <p>
+        <div class="main">
+            <!--titel-->
+            <h1 id="Home">Portfolio</h1>
 
-        </p>
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+            </div>
+            
+            <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5" align="center">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+            </div>
+            
+            <!--derde rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row jusstify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5" align="center">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                </div>
+            </div>
+            <hr>
+            <h3 id="About">
+                About
+            </h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            <h3 id="Lab">
+                Lab
+            </h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            <h3 id="Contact">
+                Contact
+            </h3>
+        </div>
     </body>
 </html>
