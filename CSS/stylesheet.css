@@ -15,7 +15,7 @@
 .typed-cursor
   opacity: 1;
   font-size: 300%;
-  animation: blink 0.7s infinite ;
+  animation: blink 0.8s infinite ;
   
   
 
@@ -27,4 +27,4 @@
   100%
     opacity: 1
 }
-
+.
