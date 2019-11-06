@@ -32,8 +32,15 @@
         .main {
         padding: 16px;
         margin-top: 30px;
-        height: 1500px; /* Used in this example to enable scrolling */
         }
+        
+
+        span.flip img:hover {               /* Flips the image */
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        }
+        
+
     </style>
 
     <head>
@@ -59,70 +66,47 @@
 
         <div class="main">
             <!--titel-->
-            <h1 id="Home">Portfolio</h1>
+            <div class="row jusstify-content-center">
+            <div class="col-md-5"><h1 id="Home">Contact</h1>  
+                <!---- Zichtbae tekst -->
+                <p>
+                    <b> &nbsp; Naam: </b> Heinz Dovensmitch <br>
+                    <b> &nbsp; Adress: </b> Klompstraat 6 <br>
+                    <b> &nbsp; Email: </b> 91367@vistacollege.nl <br>
+                    <b> &nbsp; Telefoon nummer: </b> 0672346237 <br>
+
+                </p>
+                <div class="col-md-6">
+                        
+
+                        <br>
+                        <br>
+                        <br>
+                        <!--- De sociale media afbeeldingen met link -->
+                        <a href="https://www.linkedin.com/in/damiën-bla-2436aba7/"> <img width="30%" src="./afbeeldingen/Link_Logo.PNG"> </a> 
+                        <a href="http://tiny.cc/6wbofz"> <img width='30%' src="./afbeeldingen/Face_Logo.PNG"> </a>
+                        <a href="https://github.com/Damien1304"> <img width='30%' src="./afbeeldingen/Git_Logo.JPG"> </a>
+
+                    </div>
+                    
+            </div>
+            <!----De parkiet afbeelding met link die wordt geflipt-->
+            <div class="col-md-5"> <span class="flip" >
+                 <a href=https://media.giphy.com/media/oFI7FttD0iC8V2Iqmy/giphy.gif ><img class=".image" width="78%%" src="./afbeeldingen/Parkiet met headset.jpg"></a>
+            </span>
+            </div>
+            </div>
 
             <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
             <div class="row jusstify-content-center">
-                <div class="col-md-5">
-                    <p>
-                        inf<section class='explain_Lab'>
-                            <Pre>
- 
-                          </Pre>
-                        </section>
-                    </p>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-                </div>
+                    <div class="col-md-5">
+
+                        
+                        </div>
+                        <div class="col-md-1"></div>
             </div>
             
-            <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
-            <div class="row jusstify-content-center">
-                <div class="col-md-5" align="center">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <p>
-                        inf<section class='explain_Lab'>
-                            <Pre>
- 
-                          </Pre>
-                        </section>
-                    </p>
-                </div>
-            </div>
-            
-            <!--derde rij met 2 colommen (afbeelding rechts, text links)-->
-            <div class="row jusstify-content-center">
-                <div class="col-md-5">
-                    <p>
-                        inf<section class='explain_Lab'>
-                            <Pre>
- 
-                          </Pre>
-                        </section>
-                    </p>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5" align="center">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
-                </div>
-            </div>
-            <hr>
-            <h3 id="Project 1">
-                Project 1
-            </h3>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-            <h3 id="Project 2">
-                Project 2
-            </h3>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-            <h3 id="Project 3">
-                Project 3
-            </h3>
-        </div>
+
+        
     </body>
 </html>
