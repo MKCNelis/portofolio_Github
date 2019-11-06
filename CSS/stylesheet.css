@@ -1,0 +1,30 @@
+/*Javascript*/
+.body{
+  text-align: center;
+  padding-top: 35vh;
+  background: #000;
+  color: #fff;
+
+  
+.entry{
+  font-size: 400%;
+  font-weight: bold;
+  width: auto;}
+ 
+
+.typed-cursor
+  opacity: 1;
+  font-size: 300%;
+  animation: blink 0.8s infinite ;
+  
+  
+
+@keyframes blink{
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+}
+.
