@@ -1,41 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-    <style>
-
-        body {margin:0;}
-
-        .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        text-align: center;
-        top: 0;
-        width: 100%;
-        }
-
-        .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        }
-
-        .navbar a:hover {
-        background: #00ffff;
-        color: black;
-        }
-
-        .main {
-        padding: 16px;
-        margin-top: 30px;
-        height: 1500px; /* Used in this example to enable scrolling */
-        }
-    </style>
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +8,9 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' Type='text/css' href="CSS\Stylesheet.css">
+        <script src='JavaSript_files\script.js'></script>
         <title>
             Portfolio
         </title>
@@ -50,8 +18,8 @@
     
     <body>
         <!--menu balk-->
-        <div class="navbar">
-            <div class="col-md-3"><a href="./index.html">Home</a></div>
+        <div class="row justify-content-center" id="navbar">
+            <div class="col-md-3" id="homePageMenu"><a href="./index.html#home">Home</a></div>
             <div class="col-md-3"><a href="./AboutPage.html">About</a></div>
             <div class="col-md-3"><a href="./LabPage.html">Lab</a></div>
             <div class="col-md-3"><a href="./ContactPage.html">Contact</a></div>
@@ -62,7 +30,7 @@
             <h1 id="Home">Portfolio</h1>
 
             <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
-            <div class="row jusstify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5">
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
@@ -103,9 +71,9 @@ Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viver
             </div>
             
             <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
-            <div class="row jusstify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5" align="center">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png" >
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif" >
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">

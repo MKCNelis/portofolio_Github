@@ -4,88 +4,49 @@ name document:		portfolio
 author:				P.H.D. Reumkens
 date of creation:	28-10-2019
 document function:	start pagina voor Portfolio
-date last change:	31-10-2019
+date last change:	7-11-2019
 -->
 
 <html>
     <head>
+        <!--bootstrap-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel='stylesheet' Type='text/css' href="CSS\Stylesheet.css">
         <script src='JavaSript_files\script.js'></script>
-        <style>
-                body {margin:0;}
-        
-                .navbar {   
-            body {
-                margin:0;
-            }
-    
-            .navbar {   
-                width: 20%;
-                overflow: hidden;
-                background-color: #330000;
-                position: fixed;
-                text-align: center;
-                top: 0;
-                width: 100%;
-                z-index: 1;
-            }
-    
-            .navbar a {
-                background-color: 000000;
-                float: left;
-                display: block;
-                color: #ccffcc;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-    
-            .navbar a:hover {
-                text-align: center;
-                background: #ccffcc;    
-                color: #330000;   
-            }
-    
-            .main {
-                background-color: #ccffcc33;
-                color:#330000;
-                font-family: Verdana;
-                padding: 16px;  
-                margin-top: 30px;   
-                z-index: -99999;
-            }
-        </style>        
-        <img src="testAfbeelding.png"/>
         <title>
             Portfolio
         </title>
     </head>
     <body>
         <!--menu balk-->
-        <div class="navbar">
-            <div class="col-md-3"><a href="./index.html">Home</a></div>
+        <div class="row justify-content-center" id="navbar">
+            <div class="col-md-3" id="homePageMenu"><a href="./index.html#home">Home</a></div>
             <div class="col-md-3"><a href="./AboutPage.html">About</a></div>
             <div class="col-md-3"><a href="./LabPage.html">Lab</a></div>
             <div class="col-md-3"><a href="./ContactPage.html">Contact</a></div>
+            <div class="col-md-3"><a href="#Project 1">Project 1</a></div>
+            <div class="col-md-3"><a href="#Project 2">Project 2</a></div>
+            <div class="col-md-3"><a href="#Project 3">Project 3</a></div>
+            <div class="col-md-3"><a href="#Project 4">Project 4</a></div>
         </div>
-        <span class="entry"></span>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="JavaSript_files\script.js"></script>
-        <div class="main">
+
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="JavaSript_files\script.js"></script>
+        <div class="main" id=home>
             <!--titel-->
-            <br><br>
-            <h1 id="Home">Portfolio</h1>
+            <br><br><br>
+            <span class="entry"></span>
 
             <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
-            <div class="row jusstify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5">
                     <p>
                         info info info info info  info info meer info <br> test test test
@@ -93,14 +54,14 @@ date last change:	31-10-2019
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
                 </div>
             </div>
             
             <!--tweede rij met 2 colommen (text rechts en afbeelding links)-->
-            <div class="row jusstify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5" align="center">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
@@ -111,7 +72,7 @@ date last change:	31-10-2019
             </div>
             
             <!--derde rij met 2 colommen (afbeelding rechts, text links)-->
-            <div class="row jusstify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-5">
                     <p>
                         info info info info info  info info meer info <br> test test test
@@ -119,24 +80,84 @@ date last change:	31-10-2019
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5" align="center">
-                    <img width="100%" src="./afbeeldingen/testAfbeelding.png">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
                 </div>
             </div>
             <hr>
+            
+            <!--hier beginnen de projecten-->
             <a name="Project 1"></a>
-            <h3 id="Project 1">
+            <h3>
                 Project 1
             </h3>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
+                </div>
+            </div>
+            
             <a name="Project 2"></a>
-            <h3 id="Project 2">
+            <h3>
                 Project 2
             </h3>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
+                </div>
+            </div>
+
             <a name="Project 3"></a>
-            <h3 id="Project 3">
+            <h3>
                 Project 3
             </h3>
+
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
+                </div>
+            </div>
+
+            <a name="Project 4"></a>
+            <h3>
+                Project 4
+            </h3>
+
+            <!--eerste rij met 2 colommen (afbeelding rechts, text links)-->
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p>
+                        info info info info info  info info meer info <br> test test test
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <img width="100%" src="./afbeeldingen/testAfbeelding.gif">
+                </div>
+            </div>
+
         </div>
     </body>
 </html>

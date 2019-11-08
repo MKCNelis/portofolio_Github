@@ -1,30 +1,79 @@
 /*Javascript*/
 .body{
-  text-align: center;
   padding-top: 35vh;
   background: #000;
   color: #fff;
+}
 
   
 .entry{
   font-size: 400%;
   font-weight: bold;
-  width: auto;}
+  width: auto;
+}
  
 
-.typed-cursor
+.typed-cursor{
   opacity: 1;
   font-size: 300%;
   animation: blink 0.8s infinite ;
-  
-  
+}
+        
+
+#navbar {   
+  overflow: hidden;
+  background-color: #330000;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar a {
+  background-color: 000000;
+  float: center ;
+  display: block;
+  color: #ccffcc;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background: #ccffcc;    
+  color: #330000;   
+}
+
+.main {
+  background-color: #fff;
+  color:#330000;
+  font-family: Verdana;
+  padding: 16px;  
+  margin-top: 30px;   
+  z-index: -1;
+}
+
+.explain_Lab{
+  background:rgb(199, 199, 199);
+  color:azure;  
+  }
+
+#pageNavigation {
+  z-index: 3;
+}
+
+#navbar a:hover #pageNavigation .div {
+  height: 500px;
+  background-color: #000000ff;
+  z-index: 4
+}
 
 @keyframes blink{
-  0%
-    opacity: 1
-  50%
-    opacity: 0
-  100%
-    opacity: 1
+  0%{
+    opacity: 1}
+  50%{
+    opacity: 0}
+  100%{
+    opacity: 1}
 }
-.
